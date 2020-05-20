@@ -4,8 +4,21 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    # for loop through array
+    # nested for loop to identify if duplicates exist
+    for index in range(0, len(arr) - 1):
 
-    pass
+        duplicates = 0
+
+        for item in arr:
+
+            if item == arr[index]:
+                duplicates += 1
+
+        if duplicates <= 1:
+            print(arr[index])
+            return arr[index]
+
 
 
 if __name__ == '__main__':
