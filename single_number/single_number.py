@@ -11,7 +11,6 @@ def single_number(arr):
         duplicates = 0
 
         for item in arr:
-
             if item == arr[index]:
                 duplicates += 1
 
